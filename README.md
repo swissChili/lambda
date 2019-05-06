@@ -1,4 +1,4 @@
-# λ
+![λ._ "Hello, World"](λ.png)
 
 λ is a purely functional language inspired by Lambda Calculus, ML, Haskell, and F#.
 It is not aimed to be a high level language, but rather, more of an assembler. It

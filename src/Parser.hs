@@ -9,6 +9,7 @@ ident = many1 $ letter <|> oneOf "_$"
 num = many1 digit >>= return . Number . read
 strSingle = between (char '\'') (char '\'') (many $ noneOf "'") >>= return . Str
 strDouble = between (char '"') (char '"') (many $ noneOf "\"") >>= return . Str
+strCurved = between (char '“') (char '”') (many $ noneOf "”") >>= return . Str
 str = try strSingle <|> try strDouble
 
 assignment = do
