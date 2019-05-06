@@ -1,0 +1,4 @@
+; λ example
+
+first = at 0
+main = λ argc . λ argv . puts (first argv)
